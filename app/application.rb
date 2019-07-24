@@ -4,9 +4,9 @@ class Application
     resp = Rack::Response.new
  
     time = Time.new
-    values = 
+    values = time.to_a
  
-    resp.write "#{time}\n"
+    resp.write "#{values}\n"
  
     if time.hour = 
       resp.write "You Win"
