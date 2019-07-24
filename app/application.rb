@@ -6,9 +6,9 @@ class Application
     time = Time.new
     values = time.to_a
  
-    resp.write "#{values}\n"
+    resp.write "#{values[2]}\n"
  
-    if time.hour = 
+    if values[2] = 
       resp.write "You Win"
     else
       resp.write "You Lose"
