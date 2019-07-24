@@ -6,7 +6,7 @@ class Application
     time = Time.new
     values = time.to_a
  
-    resp.write "values \n"
+    resp.write "time \n"
   
     if values[2..4] = 
       resp.write "You Win"
