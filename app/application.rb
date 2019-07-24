@@ -5,11 +5,10 @@ class Application
  
     time = Time.new
     values = time.to_a
-    exact_time = #{values[2]}:#{values[3]}:#{values[4]}
  
-    resp.write "\n"
+    resp.write "values \n"
   
-    if values[2] = 
+    if values[2..4] = 
       resp.write "You Win"
     else
       resp.write "You Lose"
