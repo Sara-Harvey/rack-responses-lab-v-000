@@ -8,10 +8,10 @@ class Application
  
     resp.write "#{time}\n"
   
-    values[2].between?  
-      resp.write "You Win"
+    values[2].between?()  
+      resp.write "Good morning!"
     else
-      resp.write "You Lose"
+      resp.write "Good afternoon!"
     end
  
     resp.finish
