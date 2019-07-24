@@ -8,7 +8,7 @@ class Application
  
     resp.write "#{time}\n"
   
-    if values[2..4] = 
+    values[2].between?  
       resp.write "You Win"
     else
       resp.write "You Lose"
