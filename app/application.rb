@@ -2,19 +2,14 @@ class Application
  
   def call(env)
     resp = Rack::Response.new
- 
-    time = Time.new
-    values = time.to_a
- 
-    resp.write "#{time}\n"
   
-    values[2..4].between?([12, 0, ]  
+    if Time.now.hour < 12
       resp.write "Good morning!"
     else
       resp.write "Good afternoon!"
     end
  
-    resp.finish
-  end
+      resp.finish
+    end
  
 end
