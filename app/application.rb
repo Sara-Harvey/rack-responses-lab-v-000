@@ -7,7 +7,7 @@ class Application
  
     resp.write "#{time}\n"
  
-    if time 
+    if time.hour = 
       resp.write "You Win"
     else
       resp.write "You Lose"
