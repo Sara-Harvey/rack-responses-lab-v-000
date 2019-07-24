@@ -8,7 +8,7 @@ class Application
     
     when time.hour = 12
       resp.write "Good afternoon!"
-    when time.hour > 12
+    when time.hour < 12
       resp.write "Good afternoon!"
     else
       resp.write "Good morning!"
