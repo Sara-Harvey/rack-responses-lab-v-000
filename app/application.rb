@@ -8,7 +8,7 @@ class Application
  
     resp.write "#{time}\n"
   
-    values[2].between?()  
+    values[2..4].between?([12, 0, ]  
       resp.write "Good morning!"
     else
       resp.write "Good afternoon!"
