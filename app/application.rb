@@ -6,9 +6,9 @@ class Application
     time = Time.now
     resp.write "#{time}\n"
     
-    if time.hour = 12
+    when time.hour = 12
       resp.write "Good afternoon!"
-    elsif time.hour < 12
+    when time.hour < 12
       resp.write "Good afternoon!"
     else
       resp.write "Good morning!"
