@@ -4,6 +4,7 @@ class Application
     resp = Rack::Response.new
  
     time = Time.new
+    values = 
  
     resp.write "#{time}\n"
  
